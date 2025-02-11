@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+body{
+    font-family: "Poppins", sans-serif;
+}
+h1 {
+  font-weight: bold;
+}
+
+.chatwithmeet__container{
+    max-width: 1672px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.button__contained {
+  @apply bg-primary border border-primary  py-2 md:py-3 px-5 rounded-md font-semibold text-sm md:text-lg leading-5 md:leading-7 text-white shadow-buttonShadow hover:bg-opacity-90;
+}
+
+.button__outline {
+  @apply bg-transparent border border-primary py-2 md:py-3 px-5 rounded-md font-semibold text-sm md:text-lg leading-5 md:leading-7 text-primary shadow-buttonShadow hover:bg-opacity-90; 
+}
+
+
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  /* box-shadow: inset 0 0 2px grey;  */
+  background: transparent;
+  border-radius: 0px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  @apply bg-black cursor-pointer; 
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-black bg-opacity-80 cursor-pointer;
+}
+
+
+.table__scroll::-webkit-scrollbar{
+  width: 4px;
+  height: 4px;
+}
+.table__scroll::-webkit-scrollbar-track {
+  background: transparent;
+  width: 0px;
+  border-radius: 0px;
+}
+
+
+.table-responsive{
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+
+@media only screen and (max-width: 768px) {
+  .chatwithmeet__container{
+    max-width: 1672px;
+    width: 100%;
+    padding: 0px;
+    margin: 0 auto;
+}
+}
